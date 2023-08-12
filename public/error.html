@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling for error such as unable to join or got disconnected */
+        body {
+            background-color: #2D2D30;
+        }
+
+        #error-text {
+            font-family: "Source Sans 3", sans-serif;
+            padding: 8px;
+            background-color: white;
+            border: solid 4px #007ACC;
+            border-radius: 12px;
+        }
+
+        #error-body {
+            font-family: "Source Sans 3", sans-serif;
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="error-body">
+        <h1 id="error-text"></h1>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const parameterValue = urlParams.get('error');
+        document.getElementById("error-text").innerText = parameterValue
+    </script>
+</body>
+</html>

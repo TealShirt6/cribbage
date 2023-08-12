@@ -1,0 +1,87 @@
+/* Classes for layout divs */
+#sidebar {
+    border-right: solid medium darkgray;
+    margin: 0;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#main {
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    position: fixed;
+    height: 100%;
+}
+
+#table {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#play {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: max-content;
+}
+
+.button {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: darkslategrey;
+}
+
+.button:disabled {
+    opacity: 50%;
+}
+
+.back {
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 25vh;
+    margin: 6px;
+    border: black solid 1px;
+    border-radius: 8px;
+    transition: scale 0.8s;
+}
+
+/*Banners for each player info */
+.points, .Character_name-container {
+    margin-top: 0;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 2px;
+    border: solid black;
+}
+
+.Character_name-container {
+    color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.points {
+    background-color: gold;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.card.selected {
+    box-shadow: 0 0 0 3px red;
+}
+
+.hand:hover {
+    transform: scale(1.1)
+}
+
