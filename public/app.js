@@ -146,7 +146,6 @@ function addName(player) {
   el.appendChild(name)
   el.appendChild(points)
   document.getElementById("sidebar").prepend(el)
-  points.style.width = `${points.clientHeight - 4}px`
   return el
 }
 
