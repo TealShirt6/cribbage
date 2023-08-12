@@ -316,10 +316,7 @@ function handleChange(snap) {
   
   // We were disconnected and removed
   if (game.players?.[meId] === undefined) {
-    console.log("Disconnected state")
-    console.log(oldGame.players)
-    console.log(game.players)
-    //location.href = "error.html?error=Disconnected"
+    location.href = "error.html?error=Disconnected"
     return
   }
 
