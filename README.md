@@ -1,5 +1,4 @@
 # cribbage
-Firebase Online Cribbage
-Cribbage Website using Firebase
+Online Cribbage website using Firebase
 
 onlinecribbage.web.app
